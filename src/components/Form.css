@@ -1,0 +1,15 @@
+input[type="text"] {
+  font-size: 18px;
+  padding: 21px;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  border-radius: 4px;
+  border: transparent;
+}
+.dark input[type="text"] {
+  background: var(--Very-Dark-Desaturated-Blue);
+  color: white;
+}
+.dark input[type="text"]::placeholder {
+  color: var(--Dark-Grayish-Blue);
+}

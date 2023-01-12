@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  line-height: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-image: url(./Assets/images/bg-desktop-light.jpg);
+  background-repeat: no-repeat;
+  background-color: var(--Very-Light-Gray);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
   min-height: 100vh;
+  width: 100vw;
+}
+
+.container.dark {
+  background-image: url(./Assets/images/bg-desktop-dark.jpg);
+  background-color: var(--Very-Dark-Blue);
+}
+.card {
+  max-width: 541px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.header h1 {
+  color: white;
+  letter-spacing: 10px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.card__list {
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 35px 50px rgb(194 195 214 / 50%);
+  border-radius: 4px;
+  min-height: 400px;
+}
+.dark .card__list {
+  box-shadow: 0 35px 50px rgb(0 0 0 / 50%);
+}
+.dark .card__list {
+  background: var(--Very-Dark-Desaturated-Blue);
+}
+.dark p {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dark .task__list p {
+  color: var(--Light-Grayish-Blue);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.footer p {
+  color: var(--Very-Dark-Grayish-Blue);
+  font-size: 14px;
+}
+
+.btn-clear {
+  color: var(--Dark-Grayish-Blue);
 }

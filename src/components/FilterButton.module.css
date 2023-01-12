@@ -1,0 +1,7 @@
+.btn.dark {
+  color: red;
+}
+
+.btn:hover {
+  color: white;
+}

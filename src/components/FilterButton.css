@@ -1,0 +1,16 @@
+.btn {
+  font-weight: bold;
+}
+
+.btn:hover {
+  color: var(--Very-Dark-Grayish-Blue);
+}
+.btn.dark {
+  color: var(--Dark-Grayish-Blue);
+}
+.btn.dark:hover {
+  color: var(--Light-Grayish-Blue);
+}
+.activeClass {
+  color: blue !important;
+}

@@ -1,0 +1,41 @@
+.checkbox {
+  display: inline-block;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  background: transparent;
+  border: 1px solid var(--Dark-Grayish-Blue);
+  cursor: pointer;
+}
+
+.checkbox:hover {
+  background: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  border: none;
+}
+
+.checkbox.completed {
+  background: url("../Assets/images/icon-check.svg"),
+    linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px transparent;
+}
+
+.taskname.completed {
+  text-decoration: line-through;
+}
+
+.task__list {
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--Very-Light-Grayish-Blue);
+}
+.dark .task__list {
+  border-bottom: 1px solid var(--Very-Dark-Grayish-Blue);
+}
+.task__list p {
+  flex: 1;
+  margin-left: 22px;
+  color: var(--Very-Dark-Grayish-Blue);
+}
